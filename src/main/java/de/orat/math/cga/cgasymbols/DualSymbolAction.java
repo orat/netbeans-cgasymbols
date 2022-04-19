@@ -23,7 +23,7 @@ public final class DualSymbolAction extends CGASymbolAction {
     public DualSymbolAction(){
         super("\u002A");
         putValue(NAME, Bundle.CTL_DualSymbolAction()); 
-        putValue(SHORT_DESCRIPTION, "Insert the \u002A symbol");
+        putValue(SHORT_DESCRIPTION, "Insert the dual symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/dual.png", false));
         putValue("iconBase", "de/orat/math/cga/cgasymbols/dual.png");
     }  

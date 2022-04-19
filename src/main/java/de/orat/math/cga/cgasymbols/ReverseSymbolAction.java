@@ -23,7 +23,7 @@ public final class ReverseSymbolAction extends CGASymbolAction {
     public ReverseSymbolAction(){
         super("\u02dc");
         putValue(NAME, Bundle.CTL_ReverseSymbolAction()); 
-        putValue(SHORT_DESCRIPTION, "Insert the \u02dc symbol");
+        putValue(SHORT_DESCRIPTION, "Insert the reverse symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/reverse.png", false));
         putValue("iconBase", "de/orat/math/cga/cgasymbols/reverse.png");
     }  

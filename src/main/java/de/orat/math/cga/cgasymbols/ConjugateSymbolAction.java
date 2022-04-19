@@ -23,7 +23,7 @@ public final class ConjugateSymbolAction extends CGASymbolAction {
     public ConjugateSymbolAction(){
         super("\u2020");
         putValue(NAME, Bundle.CTL_ConjugateSymbolAction()); 
-        putValue(SHORT_DESCRIPTION, "Insert the \u2020 symbol");
+        putValue(SHORT_DESCRIPTION, "Insert the conjugate symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/conjugate.png", false));
         putValue("iconBase", "de/orat/math/cga/cgasymbols/conjugate.png");
     }  

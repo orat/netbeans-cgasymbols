@@ -18,7 +18,7 @@ import org.openide.util.NbBundle;
     lazy = false,
     displayName = "#CTL_Epsilon3SymbolAction"
 )
-@NbBundle.Messages("CTL_Epsilon3SymbolAction=second euclid base vector")
+@NbBundle.Messages("CTL_Epsilon3SymbolAction=third euclid base vector")
 public final class Epsilon3SymbolAction extends CGASymbolAction {
     public Epsilon3SymbolAction(){
         super("\u03b5\u2083");
