@@ -31,6 +31,18 @@ import org.openide.util.actions.Presenter;
     lazy = false,
     displayName = "#CTL_CGASymbolsSubmenuAction"
 )
+
+// make the action available as macro
+// https://netbeans.apache.org/wiki/DevFaqAddMacroableAction.asciidoc
+/*@NbBundle.Messages({ "CTL_MyAction=Let's go", "macro-name=Let's go" })
+@EditorActionRegistration(
+	name = "macro-name",
+	mimeType = "text/x-java",
+	menuPath = "Source", menuPosition = 0, menuText = "#CTL_MyAction")*/
+
+// damit landet die action als symbol in der editor toolbar
+//@ActionReference(path="Editors/Toolbars/Default", position = 1000)
+
 //@ActionReference(path = "Editors/text/x-java/Popup", position = 400)
 @ActionReference(path="Editors/Popup")
 @NbBundle.Messages("CTL_CGASymbolsSubmenuAction=Insert CGA symbols...")
@@ -49,21 +61,21 @@ public final class CGASymbolsSubmenuAction extends AbstractAction
         // der String im Konstruktor wird verwendet. Wie kann ich das umstellen
         // auf CTL_CGASymbolsSubmenuAction?
         //TODO
-        JMenu menu = new JMenu("Insert CGA symbols...");
-        JMenu dualOperatorsMenu = new JMenu("Dual operators...");
+        JMenu menu = new JMenu("Insert CGA symbols");
+        JMenu dualOperatorsMenu = new JMenu("Dual operators");
         dualOperatorsMenu.add(new OuterProductSymbolAction());
         dualOperatorsMenu.add(new InnerProductSymbolAction());
         dualOperatorsMenu.add(new LeftContractionSymbolAction());
         dualOperatorsMenu.add(new RightContractionSymbolAction());
         dualOperatorsMenu.add(new MeetSymbolAction());
         dualOperatorsMenu.add(new JoinSymbolAction());
-        JMenu monadicOperatorsMenu = new JMenu("Monadic operators...");
+        JMenu monadicOperatorsMenu = new JMenu("Monadic operators");
         monadicOperatorsMenu.add(new GeneralInverseSymbolAction());
         monadicOperatorsMenu.add(new ReverseSymbolAction());
         monadicOperatorsMenu.add(new ConjugateSymbolAction());
         monadicOperatorsMenu.add(new DualSymbolAction());
         monadicOperatorsMenu.add(new UndualSymbolAction());
-        JMenu symbolsMenu = new JMenu("Base vectors...");
+        JMenu symbolsMenu = new JMenu("Base vectors");
         symbolsMenu.add(new OriginSymbolAction());
         symbolsMenu.add(new Epsilon1SymbolAction());
         symbolsMenu.add(new Epsilon2SymbolAction());
