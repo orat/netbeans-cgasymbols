@@ -51,7 +51,7 @@ import org.openide.util.actions.Presenter;
 	menuPath = "Source", menuPosition = 0, menuText = "#CTL_MyAction")*/
 
 @Messages("CTL_OuterProductSymbolAction=Outer product")
-public final class AbstractCGASymbolAction extends AbstractAction implements Presenter.Popup {
+public final class OuterProductSymbolAction extends AbstractAction implements Presenter.Popup {
  
     @StaticResource
     private static final String ICON = "de/orat/math/cga/cgasymbols/wedge.png"; 
@@ -60,7 +60,7 @@ public final class AbstractCGASymbolAction extends AbstractAction implements Pre
     private final LookupListener lookupListener;
     private final Lookup.Result<EditorCookie> result;
 
-    public AbstractCGASymbolAction() {
+    public OuterProductSymbolAction() {
         
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon(ICON, false));
         putValue("iconBase", ICON);

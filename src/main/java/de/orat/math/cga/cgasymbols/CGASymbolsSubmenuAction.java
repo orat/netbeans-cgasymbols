@@ -52,6 +52,7 @@ public final class CGASymbolsSubmenuAction extends AbstractAction
         JMenu menu = new JMenu("Insert CGA symbols...");
         JMenu dualOperatorsMenu = new JMenu("Dual operators...");
         dualOperatorsMenu.add(new OuterProductSymbolAction());
+        dualOperatorsMenu.add(new InnerProductSymbolAction());
         JMenu monadicOperatorsMenu = new JMenu("Monadic operators...");
         JMenu symbolsMenu = new JMenu("Symbols...");
         menu.add(dualOperatorsMenu);
