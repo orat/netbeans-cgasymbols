@@ -23,7 +23,7 @@ public final class GeneralInverseSymbolAction extends CGASymbolAction {
     public GeneralInverseSymbolAction(){
         super("\u03b5\u2081");
         putValue(NAME, Bundle.CTL_GeneralInverseSymbolAction()); 
-        putValue(SHORT_DESCRIPTION, "Insert the \u03b5\u2081 symbol");
+        putValue(SHORT_DESCRIPTION, "Insert the general inverse symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/inverse.png", false));
         putValue("iconBase", "de/orat/math/cga/cgasymbols/inverse.png");
     }  

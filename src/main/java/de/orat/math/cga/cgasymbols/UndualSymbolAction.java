@@ -24,7 +24,7 @@ public final class UndualSymbolAction extends CGASymbolAction {
         super("\u207B\u002A");
         putValue(NAME, Bundle.CTL_UndualSymbolAction()); 
         putValue(SHORT_DESCRIPTION, "Insert the undual symbol");
-        putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/uńdual.png", false));
+        putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/undual.png", false));
         putValue("iconBase", "de/orat/math/cga/cgasymbols/undual.png");
     }  
 }
