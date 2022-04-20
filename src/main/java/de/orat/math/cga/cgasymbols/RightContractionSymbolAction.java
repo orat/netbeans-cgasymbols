@@ -24,7 +24,7 @@ public final class RightContractionSymbolAction extends CGASymbolAction {
         super("\u230A");
         putValue(NAME, Bundle.CTL_RightContractionSymbolAction());
         putValue(SHORT_DESCRIPTION, "Insert the right contraction operator symbol");
-        putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/left-contraction.png", false));
+        putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/right-contraction.png", false));
         putValue("iconBase", "de/orat/math/cga/cgasymbols/right-contraction.png");
     }  
 }
