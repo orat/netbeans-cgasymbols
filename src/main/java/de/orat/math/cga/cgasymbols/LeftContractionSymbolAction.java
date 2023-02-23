@@ -18,6 +18,7 @@ import org.openide.util.NbBundle;
     displayName = "#CTL_LeftContractionSymbolAction"
 )
 @NbBundle.Messages("CTL_LeftContractionSymbolAction=Left contraction")
+// ⌊
 public final class LeftContractionSymbolAction extends CGASymbolAction {
 
     public LeftContractionSymbolAction(){

@@ -18,6 +18,7 @@ import org.openide.util.NbBundle;
     displayName = "#CTL_MeetSymbolAction"
 )
 @NbBundle.Messages("CTL_MeetSymbolAction=Meet")
+// ∩
 public final class MeetSymbolAction extends CGASymbolAction {
     public MeetSymbolAction(){
         super("\u222A");

@@ -18,6 +18,7 @@ import org.openide.util.NbBundle;
     displayName = "#CTL_JoinSymbolAction"
 )
 @NbBundle.Messages("CTL_JoinSymbolAction=Join")
+// ∪
 public final class JoinSymbolAction extends CGASymbolAction {
     public JoinSymbolAction(){
         super("\u2229");

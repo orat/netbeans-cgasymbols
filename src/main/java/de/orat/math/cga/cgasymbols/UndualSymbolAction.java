@@ -19,6 +19,7 @@ import org.openide.util.NbBundle;
     displayName = "#CTL_UndualSymbolAction"
 )
 @NbBundle.Messages("CTL_UndualSymbolAction=undual")
+// ⁻*
 public final class UndualSymbolAction extends CGASymbolAction {
     public UndualSymbolAction(){
         super("\u207B\u002A");

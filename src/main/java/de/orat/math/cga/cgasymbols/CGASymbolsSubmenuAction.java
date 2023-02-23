@@ -62,6 +62,7 @@ public final class CGASymbolsSubmenuAction extends AbstractAction
         // auf CTL_CGASymbolsSubmenuAction?
         //TODO
         JMenu menu = new JMenu("Insert CGA symbols");
+        
         JMenu dualOperatorsMenu = new JMenu("Dual operators");
         dualOperatorsMenu.add(new OuterProductSymbolAction());
         dualOperatorsMenu.add(new InnerProductSymbolAction());
@@ -69,21 +70,46 @@ public final class CGASymbolsSubmenuAction extends AbstractAction
         dualOperatorsMenu.add(new RightContractionSymbolAction());
         dualOperatorsMenu.add(new MeetSymbolAction());
         dualOperatorsMenu.add(new JoinSymbolAction());
+        
         JMenu monadicOperatorsMenu = new JMenu("Monadic operators");
         monadicOperatorsMenu.add(new GeneralInverseSymbolAction());
         monadicOperatorsMenu.add(new ReverseSymbolAction());
         monadicOperatorsMenu.add(new ConjugateSymbolAction());
         monadicOperatorsMenu.add(new DualSymbolAction());
         monadicOperatorsMenu.add(new UndualSymbolAction());
+        
+        monadicOperatorsMenu.add(new SquareSymbolAction());
+        monadicOperatorsMenu.add(new GradeInvolutionSymbolAction());
+        
         JMenu symbolsMenu = new JMenu("Base vectors");
-        symbolsMenu.add(new OriginSymbolAction());
+        symbolsMenu.add(new Epsilon0SymbolAction());
         symbolsMenu.add(new Epsilon1SymbolAction());
         symbolsMenu.add(new Epsilon2SymbolAction());
         symbolsMenu.add(new Epsilon3SymbolAction());
-        symbolsMenu.add(new InfinitySymbolAction());
+        symbolsMenu.add(new EpsilonInfSymbolAction());
+        
+        symbolsMenu.add(new OriginDorstSymbolAction());
+        symbolsMenu.add(new InfinityDorstSymbolAction());
+        
+        symbolsMenu.add(new EpsilonPlusSymbolAction());
+        symbolsMenu.add(new EpsilonMinusSymbolAction());
+        
+        symbolsMenu.add(new OriginLasenbySymbolAction());
+        symbolsMenu.add(new InfinityLasenbySymbolAction());
+        
+        JMenu generalSymbolsMenu = new JMenu("General symbols");
+        generalSymbolsMenu.add(new MinkovskiBiVectorSymbolAction());
+        generalSymbolsMenu.add(new EuclideanPseudoScalarSymbolAction());
+        generalSymbolsMenu.add(new PseudoScalarSymbolAction());
+        generalSymbolsMenu.add(new MinkovskiBiVectorSymbolAction());
+        generalSymbolsMenu.add(new PiSymbolAction());
+        
+        // add menus
         menu.add(dualOperatorsMenu);
         menu.add(monadicOperatorsMenu);
         menu.add(symbolsMenu);
+        menu.add(generalSymbolsMenu);
+        
         return menu;
     }
 

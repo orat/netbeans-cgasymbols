@@ -21,7 +21,8 @@ import org.openide.util.NbBundle;
     lazy = false,
     displayName = "#CTL_InnerProductSymbolAction"
 )
-@NbBundle.Messages("CTL_InnerProductSymbolAction=Inner product")
+@NbBundle.Messages("CTL_InnerProductSymbolAction=Inner/dot product")
+// ⋅
 public final class InnerProductSymbolAction extends CGASymbolAction {
 
     public InnerProductSymbolAction(){

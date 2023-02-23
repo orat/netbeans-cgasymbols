@@ -19,6 +19,7 @@ import org.openide.util.NbBundle;
     displayName = "#CTL_ReverseSymbolAction"
 )
 @NbBundle.Messages("CTL_ReverseSymbolAction=reverse")
+// ˜
 public final class ReverseSymbolAction extends CGASymbolAction {
     public ReverseSymbolAction(){
         super("\u02dc");

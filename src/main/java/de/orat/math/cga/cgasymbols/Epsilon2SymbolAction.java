@@ -1,6 +1,5 @@
 package de.orat.math.cga.cgasymbols;
 
-import de.orat.math.cga.cgasymbols.*;
 import static javax.swing.Action.SMALL_ICON;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionRegistration;

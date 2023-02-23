@@ -17,7 +17,8 @@ import org.openide.util.NbBundle;
     lazy = false,
     displayName = "#CTL_OuterProductSymbolAction"
 )
-@NbBundle.Messages("CTL_OuterProductSymbolAction=Outer product")
+@NbBundle.Messages("CTL_OuterProductSymbolAction=Outer/wedge product")
+// ∧
 public final class OuterProductSymbolAction extends CGASymbolAction {
     public OuterProductSymbolAction(){
         super("\u2227");

@@ -10,10 +10,8 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
  * @author Oliver Rettig (Oliver.Rettig@orat.de)
  */
 public class GenerateCGASymboImages {
@@ -21,12 +19,11 @@ public class GenerateCGASymboImages {
     public GenerateCGASymboImages() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
     @Test
     public void createImages() {
         // https://unicode-table.com/de/html-entities/
+        
+        // dual operators
         createImage(Character.toString('\u222A'), "meet", 20);
         createImage(Character.toString('\u2229'), "join", 20);
         createImage(Character.toString('\u230B'), "right-contraction", 20);
@@ -34,19 +31,38 @@ public class GenerateCGASymboImages {
         createImage(Character.toString('\u2228'), "vee", 20);
         createImage(Character.toString('\u2227'), "wedge", 20);
         createImage(Character.toString('\u22C5'), "dot", 20);
+        // vertical line für Betrag - wird noch nicht verwendet
         createImage(Character.toString('\u007C'), "vert", 20);
+        
         // symbols
-        createImage(Character.toString('o'), "origin", 20);
-        createImage(Character.toString('\u221E'), "infinity", 20);
+        createImage(Character.toString('\u006F'), "origin-dorst", 20);
+        createImage(Character.toString('\u221E'), "infinity-dorst", 20);
+        createImage(Character.toString('\u00F1'), "origin-lasenby", 20);
+        createImage(Character.toString('\u006E'), "infinity-lasenby", 20);
+        createImage(Character.toString('\u03B5')+Character.toString('\u2080'), "epsilon-0", 20);
         createImage(Character.toString('\u03B5')+Character.toString('\u2081'), "epsilon-1", 20);
         createImage(Character.toString('\u03B5')+Character.toString('\u2082'), "epsilon-2", 20);
         createImage(Character.toString('\u03B5')+Character.toString('\u2083'), "epsilon-3", 20);
+        createImage(Character.toString('\u03B5')+Character.toString('\u1D62'), "epsilon-inf", 20);
+        
+        createImage(Character.toString('\u03B5')+Character.toString('\u208A'), "epsilon-plus", 20);
+        createImage(Character.toString('\u03B5')+Character.toString('\u208B'), "epsilon-minus", 20);
+        
+        createImage(Character.toString('\u0045')+Character.toString('\u2083'), "euclidean-pseudo-scalar", 20);
+        createImage(Character.toString('\u0045'), "pseudo-scalar", 20);
+        createImage(Character.toString('\u0045')+Character.toString('\u2080'), "minkovski-bi-vector", 20);
+        
+        createImage(Character.toString('\u03C0'), "pi", 20);
+        
         // right-side operators 
         createImage(Character.toString('\u207b')+Character.toString('\u00B9'), "inverse", 20);
         createImage(Character.toString('\u02DC'), "reverse", 20);
         createImage(Character.toString('\u002A'), "dual", 20);
         createImage(Character.toString('\u207b')+Character.toString('\u002A'), "undual", 20);
         createImage(Character.toString('\u2020'), "conjugate", 20); // dagger
+        
+        createImage(Character.toString('\u00B2'), "square", 20);
+        createImage(Character.toString('\u005E'), "grade-involution", 20); // superscript Dach
     }
     
     private boolean createImage(String c, String name, int size){
@@ -82,6 +98,8 @@ public class GenerateCGASymboImages {
         g2d.dispose();
         try {
             // "src/main/resources/de/orat/math/cga/cgasymbols/"
+            //TODO
+            // Die Dateien sollen in den obigen Pfad hineingeschrieben werden
             ImageIO.write(img, "png", new File(name+".png"));
             System.out.println("Image \""+name+".png"+"\" written!");
         } catch (IOException ex) {

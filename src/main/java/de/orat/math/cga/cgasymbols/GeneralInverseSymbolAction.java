@@ -19,6 +19,7 @@ import org.openide.util.NbBundle;
     displayName = "#CTL_GeneralInverseSymbolAction"
 )
 @NbBundle.Messages("CTL_GeneralInverseSymbolAction=general inverse")
+// ⁻¹
 public final class GeneralInverseSymbolAction extends CGASymbolAction {
     public GeneralInverseSymbolAction(){
         super("\u03b5\u2081");
