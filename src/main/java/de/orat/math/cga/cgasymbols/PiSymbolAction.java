@@ -21,7 +21,7 @@ import org.openide.util.NbBundle;
 // ˜
 public final class PiSymbolAction extends CGASymbolAction {
     public PiSymbolAction(){
-        super("\\u03C0");
+        super("\u03C0");
         putValue(NAME, Bundle.CTL_PiSymbolAction()); 
         putValue(SHORT_DESCRIPTION, "Insert the Pi symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/pi.png", false));

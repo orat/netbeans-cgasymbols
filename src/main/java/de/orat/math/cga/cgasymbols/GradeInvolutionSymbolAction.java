@@ -22,8 +22,8 @@ import org.openide.util.NbBundle;
 public final class GradeInvolutionSymbolAction extends CGASymbolAction {
     public GradeInvolutionSymbolAction(){
         super("\u005E");
-        putValue(NAME, Bundle.CTL_SquareSymbolAction()); 
-        putValue(SHORT_DESCRIPTION, "Insert the grade-involution symbol");
+        putValue(NAME, Bundle.CTL_GradeInvolutionSymbolAction()); 
+        putValue(SHORT_DESCRIPTION, "Insert the grade involution/inversion symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/grade-involution.png", false));
         putValue("iconBase", "de/orat/math/cga/cgasymbols/grade-involution.png");
     }  
