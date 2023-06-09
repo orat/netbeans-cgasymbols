@@ -3,7 +3,7 @@ package de.orat.math.cga.cgasymbols;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import static javax.swing.Action.SMALL_ICON;
+//import static javax.swing.Action.SMALL_ICON;
 import javax.swing.JMenuItem;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;

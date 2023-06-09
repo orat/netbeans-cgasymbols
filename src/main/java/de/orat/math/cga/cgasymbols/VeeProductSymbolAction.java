@@ -17,12 +17,12 @@ import org.openide.util.NbBundle;
     lazy = false,
     displayName = "#CTL_VeeProductSymbolAction"
 )
-@NbBundle.Messages("CTL_VeeProductSymbolAction=Vee product")
+@NbBundle.Messages("CTL_VeeProductSymbolAction=Vee/Regressive product")
 // ∨
 public final class VeeProductSymbolAction extends CGASymbolAction {
     public VeeProductSymbolAction(){
         super("\u2228");
-        putValue(NAME, Bundle.CTL_OuterProductSymbolAction()); 
+        putValue(NAME, Bundle.CTL_VeeProductSymbolAction()); 
         putValue(SHORT_DESCRIPTION, "Insert the vee operator symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/vee.png", false));
         putValue("iconBase", "de/orat/math/cga/cgasymbols/vee.png");
