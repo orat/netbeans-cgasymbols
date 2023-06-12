@@ -22,7 +22,7 @@ import org.openide.util.NbBundle;
 // ⁻¹
 public final class GeneralInverseSymbolAction extends CGASymbolAction {
     public GeneralInverseSymbolAction(){
-        super("\u03b5\u2081");
+        super("\u207B\u00B9");
         putValue(NAME, Bundle.CTL_GeneralInverseSymbolAction()); 
         putValue(SHORT_DESCRIPTION, "Insert the general inverse symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/inverse.png", false));
