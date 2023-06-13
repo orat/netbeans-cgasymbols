@@ -63,6 +63,13 @@ public class GenerateCGASymboImages {
         
         createImage(Character.toString('\u00B2'), "square", 20);
         createImage(Character.toString('\u005E'), "grade-involution", 20); // superscript Dach
+        
+        createImage(Character.toString('\u003C')+Character.toString('\u003E')+Character.toString('\u2080'), "grade-0 extraction", 20);
+        createImage(Character.toString('\u003C')+Character.toString('\u003E')+Character.toString('\u2081'), "grade-1 extraction", 20);
+        createImage(Character.toString('\u003C')+Character.toString('\u003E')+Character.toString('\u2082'), "grade-2 extraction", 20);
+        createImage(Character.toString('\u003C')+Character.toString('\u003E')+Character.toString('\u2083'), "grade-3 extraction", 20);
+        createImage(Character.toString('\u003C')+Character.toString('\u003E')+Character.toString('\u2084'), "grade-4 extraction", 20);
+        createImage(Character.toString('\u003C')+Character.toString('\u003E')+Character.toString('\u2085'), "grade-5 extraction", 20);
     }
     
     private boolean createImage(String c, String name, int size){

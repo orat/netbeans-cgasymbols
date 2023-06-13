@@ -82,6 +82,13 @@ public final class CGASymbolsSubmenuAction extends AbstractAction
         monadicOperatorsMenu.add(new SquareSymbolAction());
         monadicOperatorsMenu.add(new GradeInvolutionSymbolAction());
         
+        monadicOperatorsMenu.add(new Grade0ExtractionSymbolAction());
+        monadicOperatorsMenu.add(new Grade1ExtractionSymbolAction());
+        monadicOperatorsMenu.add(new Grade2ExtractionSymbolAction());
+        monadicOperatorsMenu.add(new Grade3ExtractionSymbolAction());
+        monadicOperatorsMenu.add(new Grade4ExtractionSymbolAction());
+        monadicOperatorsMenu.add(new Grade5ExtractionSymbolAction());
+        
         JMenu symbolsMenu = new JMenu("Base vectors");
         symbolsMenu.add(new Epsilon0SymbolAction());
         symbolsMenu.add(new Epsilon1SymbolAction());
