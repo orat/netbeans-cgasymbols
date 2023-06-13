@@ -20,7 +20,7 @@ import org.openide.util.NbBundle;
 @NbBundle.Messages("CTL_SquareSymbolAction=square")
 public final class SquareSymbolAction extends CGASymbolAction {
     public SquareSymbolAction(){
-        super("\\u00B2");
+        super("\u00B2");
         putValue(NAME, Bundle.CTL_SquareSymbolAction()); 
         putValue(SHORT_DESCRIPTION, "Insert the square symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/square.png", false));
