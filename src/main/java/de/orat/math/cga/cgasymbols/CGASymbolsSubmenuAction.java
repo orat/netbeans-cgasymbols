@@ -63,31 +63,31 @@ public final class CGASymbolsSubmenuAction extends AbstractAction
         //TODO
         JMenu menu = new JMenu("Insert CGA symbols");
         
-        JMenu dualOperatorsMenu = new JMenu("Dual operators");
-        dualOperatorsMenu.add(new OuterProductSymbolAction());
-        dualOperatorsMenu.add(new VeeProductSymbolAction());
-        dualOperatorsMenu.add(new DotProductSymbolAction());
-        dualOperatorsMenu.add(new LeftContractionSymbolAction());
-        dualOperatorsMenu.add(new RightContractionSymbolAction());
-        dualOperatorsMenu.add(new MeetSymbolAction());
-        dualOperatorsMenu.add(new JoinSymbolAction());
+		JMenu binaryOperatorsMenu = new JMenu("2-ary operators");
+		binaryOperatorsMenu.add(new OuterProductSymbolAction());
+		binaryOperatorsMenu.add(new VeeProductSymbolAction());
+		binaryOperatorsMenu.add(new DotProductSymbolAction());
+		binaryOperatorsMenu.add(new LeftContractionSymbolAction());
+		binaryOperatorsMenu.add(new RightContractionSymbolAction());
+		binaryOperatorsMenu.add(new MeetSymbolAction());
+		binaryOperatorsMenu.add(new JoinSymbolAction());
         
-        JMenu monadicOperatorsMenu = new JMenu("Monadic operators");
-        monadicOperatorsMenu.add(new GeneralInverseSymbolAction());
-        monadicOperatorsMenu.add(new ReverseSymbolAction());
-        monadicOperatorsMenu.add(new ConjugateSymbolAction());
-        monadicOperatorsMenu.add(new DualSymbolAction());
-        monadicOperatorsMenu.add(new UndualSymbolAction());
+		JMenu unaryOperatorsMenu = new JMenu("1-ary operators");
+		unaryOperatorsMenu.add(new GeneralInverseSymbolAction());
+		unaryOperatorsMenu.add(new ReverseSymbolAction());
+		unaryOperatorsMenu.add(new ConjugateSymbolAction());
+		unaryOperatorsMenu.add(new DualSymbolAction());
+		unaryOperatorsMenu.add(new UndualSymbolAction());
         
-        monadicOperatorsMenu.add(new SquareSymbolAction());
-        monadicOperatorsMenu.add(new GradeInvolutionSymbolAction());
+		unaryOperatorsMenu.add(new SquareSymbolAction());
+		unaryOperatorsMenu.add(new GradeInvolutionSymbolAction());
         
-        monadicOperatorsMenu.add(new Grade0ExtractionSymbolAction());
-        monadicOperatorsMenu.add(new Grade1ExtractionSymbolAction());
-        monadicOperatorsMenu.add(new Grade2ExtractionSymbolAction());
-        monadicOperatorsMenu.add(new Grade3ExtractionSymbolAction());
-        monadicOperatorsMenu.add(new Grade4ExtractionSymbolAction());
-        monadicOperatorsMenu.add(new Grade5ExtractionSymbolAction());
+		unaryOperatorsMenu.add(new Grade0ExtractionSymbolAction());
+		unaryOperatorsMenu.add(new Grade1ExtractionSymbolAction());
+		unaryOperatorsMenu.add(new Grade2ExtractionSymbolAction());
+		unaryOperatorsMenu.add(new Grade3ExtractionSymbolAction());
+		unaryOperatorsMenu.add(new Grade4ExtractionSymbolAction());
+		unaryOperatorsMenu.add(new Grade5ExtractionSymbolAction());
         
         JMenu symbolsMenu = new JMenu("Base vectors");
         symbolsMenu.add(new Epsilon0SymbolAction());
@@ -113,8 +113,8 @@ public final class CGASymbolsSubmenuAction extends AbstractAction
         generalSymbolsMenu.add(new PiSymbolAction());
         
         // add menus
-        menu.add(dualOperatorsMenu);
-        menu.add(monadicOperatorsMenu);
+        menu.add(binaryOperatorsMenu);
+		menu.add(unaryOperatorsMenu);
         menu.add(symbolsMenu);
         menu.add(generalSymbolsMenu);
         
