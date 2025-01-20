@@ -66,7 +66,7 @@ public final class CGASymbolsSubmenuAction extends AbstractAction
         JMenu dualOperatorsMenu = new JMenu("Dual operators");
         dualOperatorsMenu.add(new OuterProductSymbolAction());
         dualOperatorsMenu.add(new VeeProductSymbolAction());
-        dualOperatorsMenu.add(new InnerProductSymbolAction());
+        dualOperatorsMenu.add(new DotProductSymbolAction());
         dualOperatorsMenu.add(new LeftContractionSymbolAction());
         dualOperatorsMenu.add(new RightContractionSymbolAction());
         dualOperatorsMenu.add(new MeetSymbolAction());
