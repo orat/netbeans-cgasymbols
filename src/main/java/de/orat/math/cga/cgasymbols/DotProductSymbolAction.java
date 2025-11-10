@@ -15,20 +15,20 @@ import org.openide.util.NbBundle;
  */
 @ActionID(
     category = "Edit",
-    id = "de.orat.math.cga.cgasymbols.InnerProductSymbolAction"
+	id = "de.orat.math.cga.cgasymbols.DotProductSymbolAction"
 )
 @ActionRegistration(
     lazy = false,
-    displayName = "#CTL_InnerProductSymbolAction"
+	displayName = "#CTL_DotProductSymbolAction"
 )
-@NbBundle.Messages("CTL_InnerProductSymbolAction=Inner/dot product")
+@NbBundle.Messages("CTL_DotProductSymbolAction=Dot product")
 // ⋅
-public final class InnerProductSymbolAction extends CGASymbolAction {
+public final class DotProductSymbolAction extends CGASymbolAction {
 
-    public InnerProductSymbolAction(){
+	public DotProductSymbolAction() {
         super("\u22C5");
-        putValue(NAME, Bundle.CTL_InnerProductSymbolAction());
-        putValue(SHORT_DESCRIPTION, "Insert the inner product operator symbol");
+		putValue(NAME, Bundle.CTL_DotProductSymbolAction());
+		putValue(SHORT_DESCRIPTION, "Insert the dot product operator symbol");
         putValue(SMALL_ICON, ImageUtilities.loadImageIcon("de/orat/math/cga/cgasymbols/dot.png", false));
         putValue("iconBase", "de/orat/math/cga/cgasymbols/dot.png");
     }  
